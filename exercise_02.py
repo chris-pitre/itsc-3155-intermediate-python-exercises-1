@@ -1,4 +1,15 @@
+# Chris Pitre
+# Intermediate Python Exercises 1
+# Exercise 2
+
 def get_combined_dict(dict1, dict2):
+    """
+    Returns a dictionary from the dictionaries given where for each common
+    key, the values from each dictionary is summed
+
+    Parameter dict1: First dictionary
+    Parameter dict2: Second dictionary
+    """
     combined_dict = {x: dict1[x] + dict2[x] for x in dict1 if x in dict2}
     return combined_dict
 
